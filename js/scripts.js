@@ -25,10 +25,12 @@ let pokemonList = [
     }
 ];
 
+// Display the list of Pokemon w/ heights on the DOM
 let i = 0;
-for (let i = 0; i < pokemonList.length; i++){
+for (let i = 0; i < pokemonList.length; i++) {
     document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')' + '<br>');
-    if (pokemonList[i].height > 1){
+    // Adds message if Pokemon's height exceeds 1
+    if (pokemonList[i].height > 1) {
         document.write(' - Wow, that\'s big!' + '<br>');
     }
 }

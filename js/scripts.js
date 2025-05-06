@@ -61,4 +61,4 @@ function pokemonDetails(pokemon) {
     document.write("<br>");
 }
 
-document.write(pokemonRepository.getAll().forEach(pokemonDetails));
+pokemonRepository.getAll().forEach(pokemonDetails);

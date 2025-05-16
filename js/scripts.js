@@ -2,9 +2,16 @@ let pokemonRepository = (function () {
     let pokemonList = [];
     let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
         
-    //Function to add Pokemon to the list
+    //Function to add Pokemon to the list w/ if condition
     function add(pokemon) {
+        if (
+            typeof pokemon === "object" &&
+            "name" in pokemon
+        ) {
         pokemonList.push(pokemon);
+        } else {
+            console.log("Pokemon is invalid.");
+        }
     }
 
     ///Function to get all Pokemon from the list
@@ -85,6 +92,7 @@ let pokemonRepository = (function () {
         addListItem: addListItem,
         loadList: loadList,
         loadDetails: loadDetails,
+        showDetails: showDetails
     };
 })();
 
@@ -95,11 +103,7 @@ pokemonRepository.loadList().then(function() {
     });
 });
 
-pokemonRepository.getAll().forEach(function (pokemon) {
-    pokemonRepository.addListItem(pokemon);
-});
-
-//Below is from exercise 1.6 and previous
+//Below is content from exercises 1.6 and previous
 //Pokemon repository with IIFE to store and manage Pokemon list
 // let pokemonRepository = (function () {
 //     let pokemonList = [
@@ -195,6 +199,11 @@ pokemonRepository.getAll().forEach(function (pokemon) {
 // }
 // document.write("<br>");
 // }
+
+// pokemonRepository.getAll().forEach(function (pokemon) {
+//     pokemonRepository.addListItem(pokemon);
+// });
+
 
 //Display the list of Pokemon w/ heights on the DOM via 'for' loop
 // for (let i = 0; i < pokemonList.length; i++) {

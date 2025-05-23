@@ -1,0 +1,1 @@
+This is a small web application with HTML, CSS and JavaScript that loads data from an external API and enables viewing of data points in detail by clicking on the list item / button.

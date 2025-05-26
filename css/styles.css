@@ -118,8 +118,7 @@ label {
 }
 
 .modal img {
-  max-width: 75%;
-  /* max-height: 50%; */
+  max-width: 120px;
 }
 
 /*Responsive design for smaller screens*/

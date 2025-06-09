@@ -97,7 +97,7 @@ let pokemonRepository = (function () {
   }
 
   function showDetails(pokemon) {
-    pokemonRepository.loadDetails(pokemon).then(function () {
+    loadDetails(pokemon).then(function () {
       showModal(pokemon);
     }).catch(function (e) {
       console.error('Error loading details:', e);

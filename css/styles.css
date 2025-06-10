@@ -1,9 +1,11 @@
 :root {
-  --light-orange: #fdd095;
-  --dark-orange: #ff7b00;
-  --white: #f5f5f5;
-  --black: #000000;
-  --button-hover-color: #ffeacd;
+  --pokemon-red: #ff0000;
+  --pokemon-dkred: #cc0000;
+  --pokemon-blue: #3b4cca;
+  --pokemon-ltblue: #3d7dca;
+  --pokemon-dkblue: #003a70;
+  --pokemon-yellow: #fccb05;
+  --pokemon-dkyellow: #b3a125;
     
 }
 
@@ -12,12 +14,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/*sytling for Pokemon buttons*/
-.button-class {
+.btn {
   width: 150px;
-  border: 2px solid var(--dark-orange);
+  border: 3px solid var(--pokemon-blue);
   border-radius: 4px;
-  background-color: var(--light-orange);;
+  background-color: var(--pokemon-red);
   padding: 7px 10px;
   text-align: center;
   text-decoration: none;
@@ -27,105 +28,32 @@ body {
   font-size: 16px;
   font-weight: 600;
   font-variant: small-caps;
+  color: var(--black);
+}
+
+.btn:hover, .btn:focus {
+  background-color: var(--pokemon-yellow);
+  border: 5px solid var(--pokemon-ltblue);
+  outline: 2px solid var(--pokemon-dkblue);
+  color: var(--pokemon-dkblue);
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  font-size: 18px;
+  box-shadow: -4px 3px 0px var(--pokemon-dkblue);
 }
 
-h1 {
-  margin-left: 10px;
+.btn-secondary {
+  width: 100px;
 }
 
-/*Style hover and focus*/
-.button-class:hover, .button-class:focus {
-  background-color: var(--button-hover-color);
-  border: 4px solid var(--dark-orange);
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: var(--pokemon-dkred);
 }
 
-/*Style for Pokemon list*/
-.pokemon-list {
-  list-style-type: none; /*Removes default list styling*/
-  margin: 10px;
-}
-
-.input-wrapper {
-  margin-bottom: 10px;
-}
-
-label {
-  display: inline-block;
-  min-width: 75px;
-}
-
-.error-message {
-  color: red;
-  font-size: 13px;
-}
-
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-    
-  /* to show it above other content */
-  z-index: 999;
-
-  /* to allow scrolling if the screen is not high enough */
-  overflow: auto;
-
-  /* centers the modal */
-  display: grid;
+.modal-body {
   text-align: center;
 }
 
-/* .modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: var(--white);;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-  text-align: center;
-  border-radius: 10px;
-  border: 5px solid var(--dark-orange);
-} */
-
-.modal-close {
-  float: right;
-  appearance: none;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  cursor: pointer;
+.navbar {
+  background-color: var(--pokemon-blue);
 }
-
-.modal h1 {
-  margin-top: 0;
-}
-
-.modal p {
-  margin-bottom: 0;
-}
-
-.modal img {
-  max-width: 120px;
-}
-
-/*Responsive design for smaller screens*/
-@media all and (max-width: 500px) {
-  h1 {
-    font-size: 38px;
-    text-align: center;
-  }
-}
-

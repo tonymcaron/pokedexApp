@@ -5,8 +5,7 @@
   --pokemon-ltblue: #3d7dca;
   --pokemon-dkblue: #003a70;
   --pokemon-yellow: #fccb05;
-  --pokemon-dkyellow: #b3a125;
-    
+  --pokemon-dkyellow: #b3a125;  
 }
 
 html, 
@@ -15,7 +14,6 @@ body {
 }
 
 .btn {
-  width: 100%;
   width: 100%;
   border: 3px solid var(--pokemon-blue);
   border-radius: 4px;
@@ -57,7 +55,6 @@ body {
 
 .navbar {
   justify-content: center;
-  justify-content: center;
   background-color: var(--pokemon-blue);
 }
 
@@ -91,7 +88,7 @@ body {
 
 @media (max-width: 768px) {
   .pokemon-list {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   }
 }
 

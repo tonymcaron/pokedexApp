@@ -15,7 +15,7 @@ body {
 }
 
 .btn {
-  width: 150px;
+  width: 100%;
   border: 3px solid var(--pokemon-blue);
   border-radius: 4px;
   background-color: var(--pokemon-red);
@@ -55,5 +55,46 @@ body {
 }
 
 .navbar {
+  justify-content: center;
   background-color: var(--pokemon-blue);
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+.pokemon-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-list button {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  text-align: cetner;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .pokemon-list {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));;
+  }
+}
+
+@media (max-width: 480px) {
+  .pokemon-list {
+    grid-template-columns: 1fr;
+  }
 }

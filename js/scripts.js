@@ -97,6 +97,11 @@ let pokemonRepository = (function () {
     $('.typesElement').text('Types: ' + typeNames.join(', '));
 
     $('#pokemonModal').modal('show');
+
+    $('pokemonModal').on('hide.bs.modal', function () {
+  //Blur any focused element inside the modal
+  $(this).find(':focus').blur();
+});
   }
 
   function showDetails(pokemon) {

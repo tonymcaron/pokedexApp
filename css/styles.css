@@ -16,6 +16,7 @@ body {
 
 .btn {
   width: 100%;
+  width: 100%;
   border: 3px solid var(--pokemon-blue);
   border-radius: 4px;
   background-color: var(--pokemon-red);
@@ -55,6 +56,7 @@ body {
 }
 
 .navbar {
+  justify-content: center;
   justify-content: center;
   background-color: var(--pokemon-blue);
 }

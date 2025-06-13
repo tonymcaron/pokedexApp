@@ -28,7 +28,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   font-variant: small-caps;
-  color: var(--black);
+  color: black;
 }
 
 .btn:hover, .btn:focus {
@@ -83,7 +83,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  text-align: cetner;
+  text-align: center;
   padding: 0.5rem 1rem;
 }
 

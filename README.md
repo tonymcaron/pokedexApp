@@ -1,5 +1,5 @@
 # Pokedex Application
-This is a smallweb application that loads data from an external API [PokéAPI](https://pokeapi.co/) and displays a list of Pokémon.  Users can click on any Pokémon to view its details in a Bootstrap modal.
+This is a small web application that loads data from an external API [PokéAPI](https://pokeapi.co/) and displays a list of Pokémon.  Users can click on any Pokémon to view its details in a Bootstrap modal.
 
 ## Tech Stack
 - HTML

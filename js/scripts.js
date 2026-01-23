@@ -7,7 +7,7 @@ let pokemonRepository = (function () {
     if (typeof pokemon === "object" && "name" in pokemon) {
       pokemonList.push(pokemon);
     } else {
-      console.log("Pokemon is invalid.");
+      console.log("Pokémon is invalid.");
     }
   }
 
@@ -129,6 +129,6 @@ pokemonRepository.loadList().then(function () {
 });
 
 $("#pokemonModal").on("hide.bs.modal", function () {
-      //Blur any focused element inside the modal
-      $(this).find(":focus").blur();
-    });
+  //Blur any focused element inside the modal
+  $(this).find(":focus").blur();
+});
